@@ -399,11 +399,6 @@ p {
     width: 60vh;
   }
 
-  .readmore img {
-    padding-top: 30px;
-    width: 12vh;
-  }
-
   /* SECTION 2 */
 
   .section2 {
@@ -453,12 +448,20 @@ p {
     grid-column-start: 2;
   }
 
+  .readmore img {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 12vh;
+    display: grid;
+    grid-column-start: -1;
+  }
+
   .readmore1 img {
     padding-top: 10px;
     padding-bottom: 20px;
     width: 12vh;
-    display: flex;
-    grid-column-start: 2;
+    display: grid;
+    grid-column-start: -1;
   }
 
   .readmore2 {
