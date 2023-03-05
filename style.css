@@ -10,11 +10,15 @@
 
 /* generelt  */
 .body {
-  background-color: #f8f8ed;
+  background-color: #fafae7;
 }
 
 img {
   width: 100%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h1 {
@@ -22,7 +26,41 @@ h1 {
   font-family: "Big Shoulders Text";
   font-size: 30px;
   font-style: normal;
+  font-weight: 900;
+}
+
+h2 {
+  color: #e8863a;
+  font-family: "Big Shoulders Text";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Big Shoulders Text";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: ekstralight;
   font-weight: 400;
+}
+
+h5 {
+  font-family: "Big Shoulders Text";
+  font-size: 22px;
+  font-style: normal;
+  font-variant: ekstralight;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Abel", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
+  word-spacing: 0.1rem;
+  line-height: 1.9rem;
 }
 
 .col_com {
@@ -30,8 +68,59 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* section1 */
+
+.section1 {
+  background-color: #30482cda;
+  padding: 50px;
+}
+
+.section1 h3 {
+  color: #000;
+}
+
+.section1 p {
+  color: #f8f8ed;
+}
+
+/* section 2 */
+
+.competences {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 15px;
+}
+
+.col_com {
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  place-content: space-between;
+}
+
+/* section 3 */
+
+.projects {
+  padding: 50px;
+  background-color: #30482cda;
+}
+
+.section3 p {
+  color: #f8f8ed;
+}
+
 /* Mobilversion */
 @media (max-width: 600px) {
+  h3 {
+    font-family: "Big Shoulders Text";
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #e8863a;
+  }
+
   .overskrift {
     margin: 3rem;
     margin-top: 20rem;
@@ -41,26 +130,168 @@ h1 {
   }
 
   .underoverskrift {
-    font-family: "Big Shoulders Text";
-    font-size: 17.5px;
+    font-size: 23px;
   }
 
-  .groenboks1 {
-    display: flex;
-    width: 100vh;
-  }
+  /* SECTION 1 */
 
   .section1 img {
     display: flex;
-    width: 30vh;
-    margin: 1rem;
+    width: 40vh;
+    margin: auto;
+  }
+
+  .about {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .readmore img {
+    padding-top: 30px;
+    width: 12vh;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    padding: 10px;
+  }
+
+  /* SECTION 3 */
+  .section3_overskrift {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 35px;
+  }
+
+  .col_tekst_bl {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .col_tekst_nb {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .col_tekst_as {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .readmore img {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 12vh;
+    display: flex;
+    margin: auto;
   }
 }
 
-/* tablet */
+/* tablet lille*/
 @media (min-width: 600px) {
+  h3 {
+    font-family: "Big Shoulders Text";
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #e8863a;
+  }
+
   .overskrift {
-    margin: 3rem;
+    margin: 5rem;
+    margin-top: 20rem;
+  }
+  .navn {
+    font-size: 45px;
+  }
+
+  .underoverskrift {
+    font-size: 34.8px;
+  }
+
+  /* SECTION 1 */
+
+  .section1 img {
+    display: flex;
+    width: 50vh;
+    margin: auto;
+  }
+
+  .about {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .readmore img {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 15vh;
+    display: flex;
+    margin: auto;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .col_com {
+    padding: 50px;
+  }
+
+  /* SECTION 3 */
+
+  .section3_overskrift {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 35px;
+  }
+
+  .col_tekst_bl {
+    margin: 1rem;
+  }
+
+  .col_tekst_nb {
+    margin: 1rem;
+  }
+
+  .col_tekst_as {
+    margin: 1rem;
+  }
+
+  .readmore img {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 15vh;
+    display: flex;
+    margin: auto;
+  }
+}
+
+/* tablet stor*/
+@media (min-width: 800px) {
+  h3 {
+    font-family: "Big Shoulders Text";
+    font-size: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #e8863a;
+  }
+
+  .overskrift {
+    margin: 5rem;
     margin-top: 20rem;
   }
   .navn {
@@ -68,16 +299,47 @@ h1 {
   }
 
   .underoverskrift {
-    font-size: 25.2px;
+    font-size: 45.8px;
   }
 
-  .groenboks1 {
-    display: flex;
-    width: 100vh;
+  /* SECTION 1  */
+
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
 
   .section1 img {
-    width: 30vh;
+    width: 50vh;
+  }
+
+  .readmore img {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 12vh;
+    display: grid;
+    grid-column-start: -1;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .col_com {
+    padding: 100px;
+  }
+
+  /* SECTION 3 */
+
+  .section3_overskrift {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 35px;
   }
 
   .section3 {
@@ -85,18 +347,37 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .bl {
-    margin: auto;
+  .nb {
+    grid-column-start: 2;
   }
 
-  .col_tekst_bl {
-    text-align: center;
-    padding-bottom: 3rem;
-    margin: auto;
+  .col_tekst_nb {
+    grid-column-start: 1;
+  }
+
+  .as {
+    grid-column-start: 1;
+    order: -1;
+  }
+
+  .col_tekst_as {
+    grid-column-start: 2;
   }
 }
+
 /* desktop */
-@media (min-width: 1000px) {
+@media (min-width: 1150px) {
+  h3 {
+    font-family: "Big Shoulders Text";
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #e8863a;
+  }
+
+  /* SECTION 1 */
+
   .overskrift {
     margin: 3rem;
     margin-top: 20rem;
@@ -106,17 +387,37 @@ h1 {
   }
 
   .underoverskrift {
-    font-size: 34.5px;
+    font-size: 61px;
   }
 
-  .groenboks1 {
-    display: flex;
-    width: 100vh;
+  .section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .section1 img {
+    width: 60vh;
+  }
+
+  .readmore img {
+    padding-top: 30px;
+    width: 12vh;
+  }
+
+  /* SECTION 2 */
+
+  .section2 {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  /* SECTION 3 */
+
+  .section3_overskrift {
     display: flex;
-    width: 50vh;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 35px;
   }
 
   .section3 {
@@ -124,18 +425,53 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .bl {
-    margin: auto;
+  .section3_overskrift {
+    place-content: center;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nb {
+    grid-column-start: 2;
+    padding-top: 10px;
+  }
+
+  .col_tekst_nb {
+    grid-column-start: 1;
+  }
+
+  .as {
+    position: absolute;
+    grid-column-start: 1;
+    order: -1;
+  }
+
+  .col_tekst_as {
     grid-column-start: 2;
   }
 
-  .col_tekst_bl {
-    text-align: center;
-    padding-bottom: 3rem;
-    margin: auto;
+  .readmore1 img {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 12vh;
+    display: flex;
+    grid-column-start: 2;
   }
 
-  .section3_overskrift {
-    place-content: center;
+  .readmore2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 12vh;
+    display: grid;
+  }
+
+  .readmore3 img {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 12vh;
+    display: grid;
   }
 }
