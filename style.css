@@ -1,0 +1,141 @@
+* {
+  all: unset;
+
+  display: revert;
+
+  cursor: revert;
+
+  box-sizing: border-box;
+}
+
+/* generelt  */
+.body {
+  background-color: #f8f8ed;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #e8863a;
+  font-family: "Big Shoulders Text";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.col_com {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Mobilversion */
+@media (max-width: 600px) {
+  .overskrift {
+    margin: 3rem;
+    margin-top: 20rem;
+  }
+  .navn {
+    font-size: 30px;
+  }
+
+  .underoverskrift {
+    font-family: "Big Shoulders Text";
+    font-size: 17.5px;
+  }
+
+  .groenboks1 {
+    display: flex;
+    width: 100vh;
+  }
+
+  .section1 img {
+    display: flex;
+    width: 30vh;
+    margin: 1rem;
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) {
+  .overskrift {
+    margin: 3rem;
+    margin-top: 20rem;
+  }
+  .navn {
+    font-size: 60px;
+  }
+
+  .underoverskrift {
+    font-size: 25.2px;
+  }
+
+  .groenboks1 {
+    display: flex;
+    width: 100vh;
+  }
+
+  .section1 img {
+    width: 30vh;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bl {
+    margin: auto;
+  }
+
+  .col_tekst_bl {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: auto;
+  }
+}
+/* desktop */
+@media (min-width: 1000px) {
+  .overskrift {
+    margin: 3rem;
+    margin-top: 20rem;
+  }
+  .navn {
+    font-size: 80px;
+  }
+
+  .underoverskrift {
+    font-size: 34.5px;
+  }
+
+  .groenboks1 {
+    display: flex;
+    width: 100vh;
+  }
+
+  .section1 img {
+    display: flex;
+    width: 50vh;
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bl {
+    margin: auto;
+    grid-column-start: 2;
+  }
+
+  .col_tekst_bl {
+    text-align: center;
+    padding-bottom: 3rem;
+    margin: auto;
+  }
+
+  .section3_overskrift {
+    place-content: center;
+  }
+}
