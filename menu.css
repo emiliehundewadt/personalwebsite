@@ -15,7 +15,7 @@
 
 .main-menu {
   display: flex;
-  color: #fff;
+  color: #d43eb5;
   font-family: nimbus-sans-condensed, sans-serif;
   font-size: 20px;
   font-weight: 100;
@@ -40,9 +40,9 @@
   border-bottom: 2px solid #edf0ec;
 }
 
-.logo {
+.logo img {
   display: flex;
-  width: 35vh;
+  opacity: 20%;
 }
 
 /* burgermenu */
