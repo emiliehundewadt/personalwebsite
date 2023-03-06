@@ -9,8 +9,8 @@
 }
 
 /* generelt  */
-.body {
-  background-color: #fafae7;
+body {
+  background-color: #000019;
 }
 
 img {
@@ -22,19 +22,21 @@ ul {
 }
 
 h1 {
-  color: #e8863a;
-  font-family: "Big Shoulders Text";
-  font-size: 30px;
-  font-style: normal;
+  -webkit-text-stroke-width: 0.02em;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.9);
+  font-family: nimbus-sans-condensed, sans-serif;
   font-weight: 900;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 
 h2 {
-  color: #e8863a;
-  font-family: "Big Shoulders Text";
+  -webkit-text-stroke-width: 0.04em;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.9);
+  font-family: "Anton", sans-serif;
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h4 {
@@ -70,9 +72,13 @@ p {
 
 /* section1 */
 
+.border1 {
+  border-style: groove none groove none;
+  transform: skewY(9deg);
+}
 .section1 {
-  background-color: #30482cda;
   padding: 50px;
+  transform: skewY(-9deg);
 }
 
 .section1 h3 {
@@ -97,13 +103,26 @@ p {
   padding: 10px;
   margin: auto;
   place-content: space-between;
+  color: #f8f8ed;
 }
 
 /* section 3 */
 
 .projects {
   padding: 50px;
-  background-color: #30482cda;
+}
+
+.border2 {
+  border-style: groove none groove none;
+  transform: skewY(-11deg);
+}
+
+.section3 {
+  transform: skewY(11deg);
+}
+
+.section3_overskrift {
+  transform: skewY(11deg);
 }
 
 .section3 p {
@@ -113,7 +132,7 @@ p {
 /* Mobilversion */
 @media (max-width: 600px) {
   h3 {
-    font-family: "Big Shoulders Text";
+    font-family: "Anton", sans-serif;
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
@@ -121,31 +140,45 @@ p {
     color: #e8863a;
   }
 
+  .hero {
+    padding-bottom: 4rem;
+  }
+
   .overskrift {
     margin: 3rem;
-    margin-top: 20rem;
+    margin-top: 25rem;
   }
   .navn {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .underoverskrift {
-    font-size: 23px;
+    font-size: 25px;
+    color: #f8f8ed;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    opacity: 70%;
   }
 
   /* SECTION 1 */
 
-  .section1 img {
-    display: flex;
-    width: 40vh;
-    margin: auto;
+  .section1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .about {
     display: flex;
     margin: auto;
     justify-content: center;
-    padding: 15px;
+    padding-bottom: 3em;
+    
+  }
+
+  .section1 img {
+    display: flex;
+    width: 40vh;
+    margin: auto;
   }
 
   .readmore img {
@@ -161,11 +194,21 @@ p {
     padding: 10px;
   }
 
+  .competences {
+    padding-bottom: 3rem;
+  }
+
   /* SECTION 3 */
+
+  .section3 {
+    margin-bottom: 4rem;
+  }
+
   .section3_overskrift {
     display: flex;
     justify-content: center;
-    padding-bottom: 35px;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
   }
 
   .col_tekst_bl {
@@ -195,12 +238,16 @@ p {
 /* tablet lille*/
 @media (min-width: 600px) {
   h3 {
-    font-family: "Big Shoulders Text";
+    font-family: "'StratosLCWeb'";
     font-size: 28px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
     color: #e8863a;
+  }
+
+  .hero {
+    padding-bottom: 4rem;
   }
 
   .overskrift {
@@ -213,9 +260,15 @@ p {
 
   .underoverskrift {
     font-size: 34.8px;
+    color: #f8f8ed;
   }
 
   /* SECTION 1 */
+
+  .section1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 
   .section1 img {
     display: flex;
@@ -251,11 +304,16 @@ p {
 
   /* SECTION 3 */
 
+  .section3 {
+    margin-bottom: 4rem;
+  }
+
   .section3_overskrift {
     display: flex;
     margin: auto;
     justify-content: center;
-    padding-bottom: 35px;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .col_tekst_bl {
@@ -287,7 +345,11 @@ p {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    color: #e8863a;
+    border: #f8f8ed;
+  }
+
+  .hero {
+    padding-bottom: 4rem;
   }
 
   .overskrift {
@@ -300,6 +362,7 @@ p {
 
   .underoverskrift {
     font-size: 45.8px;
+    color: #f8f8ed;
   }
 
   /* SECTION 1  */
@@ -339,12 +402,21 @@ p {
     display: flex;
     margin: auto;
     justify-content: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section3_overskrift {
+    display: flex;
+    margin: auto;
+    justify-content: center;
     padding-bottom: 35px;
   }
 
   .section3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
   }
 
   .nb {
@@ -376,7 +448,9 @@ p {
     color: #e8863a;
   }
 
-  /* SECTION 1 */
+  .hero {
+    padding-bottom: 8rem;
+  }
 
   .overskrift {
     margin: 3rem;
@@ -388,7 +462,10 @@ p {
 
   .underoverskrift {
     font-size: 61px;
+    color: #f8f8ed;
   }
+
+  /* SECTION 1 */
 
   .section1 {
     display: grid;
@@ -412,12 +489,14 @@ p {
     display: flex;
     margin: auto;
     justify-content: center;
-    padding-bottom: 35px;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .section3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
   }
 
   .section3_overskrift {

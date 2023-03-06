@@ -15,24 +15,25 @@
 
 .main-menu {
   display: flex;
-  color: #e8863a;
-  font-family: "Big Shoulders Text";
-  font-size: 24px;
-  line-height: 32px;
+  color: #fff;
+  font-family: nimbus-sans-condensed, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .main-menu ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 6rem;
+  gap: 3em;
   letter-spacing: 0.1em;
   transition: background-color 0.5s ease;
 }
 
 .banner a {
   text-decoration: none;
-  color: #e8863a;
+  color: #fff;
+  font-weight: lighter;
 }
 
 .main-menu a:hover {
@@ -66,10 +67,11 @@
     margin: 2rem;
   }
 
-  .logo {
-    width: 20vh;
+  .logo img {
+    width: 15vh;
     height: auto;
   }
+
   .toggle-btn {
     display: block; /* Vis knappen, når viewporten maksimalt er 600px */
   }
