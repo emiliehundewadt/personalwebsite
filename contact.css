@@ -2,12 +2,13 @@ p {
   color: #fff;
 }
 
-.border_contact {
+.border2 {
   border-style: none none groove none;
   transform: skewY(-9deg);
   border-color: #d43eb5;
+  border-width: 5px;
   text-shadow: 0 0 6px rgba(43, 15, 156, 0.5), 0 0 30px rgba(255, 255, 255, 0.1);
-  padding-top: 4rem;
+  margin-top: 8rem;
 }
 
 /* Mobilversion */
@@ -41,22 +42,104 @@ p {
   .grid_grid_grid img {
     width: 9vh;
   }
+}
 
-  /* lille tablet */
-  @media (min-width: 600px) {
+/* lille tablet */
+@media (min-width: 600px) {
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  /* tablet stor*/
-  @media (min-width: 800px) {
+  .venstre_grid {
+    text-align: center;
   }
 
-  /* desktop*/
-  @media (min-width: 800px) {
-    .grid_contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      max-width: 800px;
-      margin: auto;
-    }
+  .find {
+    padding-bottom: 10px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+  }
+}
+
+/* tablet stor*/
+@media (min-width: 800px) {
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .find {
+    padding-bottom: 10px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+  }
+}
+
+/* desktop*/
+@media (min-width: 800px) {
+  .grid_contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .find {
+    padding-bottom: 10px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+    padding-bottom: 2rem;
   }
 }
