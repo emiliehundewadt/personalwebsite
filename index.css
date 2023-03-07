@@ -9,8 +9,24 @@
 }
 
 /* generelt  */
+
+.myHeader {
+  display: grid;
+}
+
+.grid_video {
+  grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.banner {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.overskrift {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
 body {
-  background-color: #000011;
+  background-color: #000;
 }
 
 video {
@@ -20,7 +36,6 @@ video {
 }
 
 .video {
-  transform: skewY(-9deg);
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
@@ -171,7 +186,6 @@ p {
 
   .overskrift {
     margin: 3rem;
-    margin-top: 25rem;
   }
   .navn {
     font-size: 45px;

@@ -10,28 +10,53 @@ p {
   padding-top: 4rem;
 }
 
-.banner {
-  margin-bottom: 4rem;
-}
-
 /* Mobilversion */
 @media (max-width: 600px) {
-}
-
-/* lille tablet */
-@media (min-width: 600px) {
-}
-
-/* tablet stor*/
-@media (min-width: 800px) {
-}
-
-/* desktop*/
-@media (min-width: 800px) {
   .grid_contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 800px;
+  }
+
+  .venstre_grid {
+    text-align: center;
+  }
+
+  .find {
+    padding-bottom: 10px;
+  }
+
+  .hoejre_grid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .grid_grid_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    max-width: fit-content;
     margin: auto;
+    padding-bottom: 3rem;
+  }
+
+  .grid_grid_grid img {
+    width: 9vh;
+  }
+
+  /* lille tablet */
+  @media (min-width: 600px) {
+  }
+
+  /* tablet stor*/
+  @media (min-width: 800px) {
+  }
+
+  /* desktop*/
+  @media (min-width: 800px) {
+    .grid_contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 800px;
+      margin: auto;
+    }
   }
 }
